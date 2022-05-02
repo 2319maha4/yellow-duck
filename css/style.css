@@ -84,11 +84,17 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 12px;
     color: #fff;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     line-height: 19px;
+}
+
+@media screen and (min-width:768px) {
+    h3 {
+        font-size: 16px;
+    }
 }
 
 p {
@@ -150,6 +156,7 @@ a:hover {
 .btn:hover {
     background-color: #000;
     color: #FFF;
+    transition: all 1s ease;
 }
 
 .col {
@@ -169,6 +176,12 @@ a:hover {
 
 #header {
     position: relative;
+}
+
+@media screen and (max-width:768px) {
+    #header .container {
+        padding: 5px;
+    }
 }
 
 .header-content {
@@ -195,7 +208,8 @@ a:hover {
     right: 0;
     background-color: #fff2ca;
     z-index: 3;
-    padding: 10px 0;
+    padding: 20px 0;
+    transition: all 1s ease;
 }
 
 @media screen and (min-width:667px) {
@@ -217,7 +231,7 @@ a:hover {
 }
 
 .header-logo {
-    margin: 0 auto 15px;
+    margin: 0 auto 5px;
 }
 
 @media screen and (min-width:768px) {
@@ -249,10 +263,10 @@ nav {
 }
 
 .menu li {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    margin: 0 10px 0 0;
+    margin: 0 5px 0 0;
     position: relative;
     height: 30px;
 }
@@ -261,6 +275,7 @@ nav {
     .menu li {
         height: 48px;
         margin: 0 34px 0 0;
+        font-weight: 600;
     }
 }
 
@@ -272,12 +287,6 @@ nav {
 @media screen and (min-width:768px) {
     .menu li:last-child {
         height: 66px;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .menu li a:hover {
-        font-weight: 600;
     }
 }
 
@@ -429,12 +438,14 @@ nav {
 
 .card {
     width: 47%;
-    padding: 20px;
+    padding: 10px;
     margin: 0 10px 10px 0;
     height: 270px;
     background: #FFFFFF;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06), 0px 3px 24px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
+    transition: all 1s ease;
+    cursor: pointer;
 }
 
 @media screen and (min-width:768px) {
@@ -463,9 +474,18 @@ nav {
 .card-text {
     display: block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+@media screen and (min-width:768px) {
+    .card-text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 /* what-we-do end */
@@ -665,6 +685,12 @@ nav {
     }
 }
 
+@media screen and (min-width:768px) {
+    .discuss-project-text .connect-us {
+        padding: 16px 146px 8px;
+    }
+}
+
 .slogan {
     background: #FFFFFF;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06), 0px 3px 24px rgba(0, 0, 0, 0.07);
@@ -689,6 +715,7 @@ nav {
 }
 
 .slogan strong a {
+    display: inline;
     font-weight: 900;
     color: #FFDA00;
 }
@@ -779,7 +806,13 @@ nav {
 }
 
 .rights li {
-    margin: 0 80px 0 0;
+    margin: 0 25px 0 0;
+}
+
+@media screen and (min-width:768px) {
+    .rights li {
+        margin: 0 80px 0 0;
+    }
 }
 
 .rights li:last-child {
